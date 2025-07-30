@@ -138,15 +138,15 @@ const Companies = () => {
             <h3 className="text-2xl font-bold text-primary mb-4">Journey Statistics</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               <div className="text-center">
-                <div className="text-3xl font-bold text-ocean-medium mb-2">6+</div>
-                <div className="text-sm text-muted-foreground">Years Experience</div>
+                <div className="text-3xl font-bold text-ocean-medium mb-2">15+</div>
+                <div className="text-sm text-muted-foreground">Years IT Experience</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-ocean-medium mb-2">20+</div>
                 <div className="text-sm text-muted-foreground">Projects Delivered</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-ocean-medium mb-2">6</div>
+                <div className="text-3xl font-bold text-ocean-medium mb-2">5</div>
                 <div className="text-sm text-muted-foreground">Companies Served</div>
               </div>
               <div className="text-center">
