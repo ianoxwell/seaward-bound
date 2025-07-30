@@ -15,15 +15,15 @@ const skills: Skill[] = [
   {
     category: 'Frontend Development',
     icon: Code,
-    description: 'Creating engaging and responsive user interfaces with modern frameworks and best practices.',
-    technologies: ['React', 'TypeScript', 'Next.js', 'Vue.js', 'Tailwind CSS', 'Sass'],
+    description: 'Creating engaging, accessible, and responsive user interfaces with modern frameworks and best practices.',
+    technologies: ['React', 'Angular', 'TypeScript', 'Redux Toolkit', 'Sass'],
     color: 'text-blue-600'
   },
   {
     category: 'Backend Development',
     icon: Database,
     description: 'Building robust server-side applications, APIs, and database architectures that scale.',
-    technologies: ['Node.js', 'Python', 'PostgreSQL', 'MongoDB', 'Redis', 'GraphQL'],
+    technologies: ['Node.js', 'Next.js', 'DotNet', 'PostgreSQL', 'MongoDB', 'MsSQL', 'Redis', 'GraphQL'],
     color: 'text-green-600'
   },
   {
@@ -37,14 +37,14 @@ const skills: Skill[] = [
     category: 'Cloud & DevOps',
     icon: Cloud,
     description: 'Deploying and managing applications in the cloud with modern DevOps practices.',
-    technologies: ['AWS', 'Docker', 'Kubernetes', 'CI/CD', 'Terraform', 'Vercel'],
+    technologies: ['AWS', 'Docker', 'Azure', 'CI/CD', 'Fly.io', 'Vercel'],
     color: 'text-orange-600'
   },
   {
     category: 'UI/UX Design',
     icon: Palette,
     description: 'Designing intuitive and accessible user experiences with a focus on usability and aesthetics.',
-    technologies: ['Figma', 'Adobe XD', 'Sketch', 'Prototyping', 'User Research', 'Accessibility'],
+    technologies: ['Figma', 'Prototyping', 'User Research', 'Accessibility'],
     color: 'text-pink-600'
   },
   {
@@ -79,13 +79,13 @@ const Skills = () => {
         </div>
 
         {/* Skills Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {skills.map((skill, index) => {
             const Icon = skill.icon;
             return (
               <Card
                 key={skill.category}
-                className={`group hover:shadow-deep transition-all duration-500 anchor-hover border-border bg-card/80 backdrop-blur-sm fade-in-up`}
+                className={`group hover:shadow-deep transition-all duration-250 anchor-hover border-border bg-card/80 backdrop-blur-sm fade-in-up`}
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <CardHeader className="pb-4">
@@ -103,7 +103,7 @@ const Skills = () => {
                   <p className="text-muted-foreground mb-4 leading-relaxed">{skill.description}</p>
 
                   <div className="space-y-2">
-                    <h4 className="text-sm font-semibold text-primary">Technologies & Tools</h4>
+                    <div className="font-semibold text-primary mb-3">Technologies & Tools</div>
                     <div className="flex flex-wrap gap-2">
                       {skill.technologies.map((tech) => (
                         <span
@@ -128,18 +128,6 @@ const Skills = () => {
               <div className="flex items-center justify-center mb-6">
                 <div className="relative h-10 w-10 mr-4">
                   <Compass className="h-10 w-10 text-primary-foreground compass-rotate" />
-                  <div className="absolute top-1 left-1/2 transform -translate-x-1/2 text-xs font-bold text-primary-foreground">
-                    N
-                  </div>
-                  <div className="absolute right-1 top-1/2 transform -translate-y-1/2 text-xs font-bold text-primary-foreground">
-                    E
-                  </div>
-                  <div className="absolute bottom-1 left-1/2 transform -translate-x-1/2 text-xs font-bold text-primary-foreground">
-                    S
-                  </div>
-                  <div className="absolute left-1 top-1/2 transform -translate-y-1/2 text-xs font-bold text-primary-foreground">
-                    W
-                  </div>
                 </div>
                 <h3 className="text-2xl lg:text-3xl font-bold text-primary-foreground">Ready to Set Sail Together?</h3>
               </div>
@@ -150,7 +138,7 @@ const Skills = () => {
                 life.
               </p>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
                 <div className="text-center">
                   <Anchor className="h-8 w-8 text-primary-foreground mx-auto mb-3 animate-gentle-float" />
                   <h4 className="font-semibold text-primary-foreground mb-2">Full-Stack Development</h4>
@@ -177,7 +165,7 @@ const Skills = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button variant="secondary" size="lg" className="anchor-hover px-8 py-3" asChild>
+                <Button variant="secondary" size="lg" className="px-8 py-3" asChild>
                   <a href="mailto:ianoxwell@gmail.com" aria-label="Send email to start project discussion">
                     Start a Conversation
                   </a>
@@ -186,17 +174,17 @@ const Skills = () => {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="anchor-hover border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary px-8 py-3"
+                  className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary px-8 py-3"
                   asChild
                 >
-                  <a
-                    href="/resume.pdf"
+                    <a
+                    href="/assets/IanOxwell_FullStackDeveloper.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Download detailed resume (opens PDF in new tab)"
-                  >
+                    >
                     View My Experience
-                  </a>
+                    </a>
                 </Button>
               </div>
             </div>
