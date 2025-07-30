@@ -63,7 +63,7 @@ const Navigation = ({ activeSection, onSectionChange }: NavigationProps) => {
             >
               <Anchor className="h-6 w-6" data-name="Anchor" />
             </motion.div>
-            <span className="font-bold text-lg">Portfolio</span>
+            <span className="font-bold text-lg">Port Folio</span>
           </button>
 
           {/* Desktop Navigation */}
